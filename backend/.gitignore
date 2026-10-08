@@ -1,4 +1,25 @@
+# Dependencies
 node_modules/
+
+# Environment files
 .env
+.env.*
+*.env
+
+# Uploads - ignore runtime uploads, keep initial seed assets and .gitkeep
 uploads/*
 !uploads/.gitkeep
+!uploads/itc-grand-chola-chennai.jpg
+!uploads/leela-palace-chennai.jpeg
+!uploads/palais-de-mahe-puducherry.webp
+!uploads/taj-falaknuma-palace.webp
+!uploads/taj-fishermans-cove-resort-spa-mahabalipuram.jpg
+!uploads/taj-lake-palace.avif
+!uploads/the-leela-palace-new-delhi.jpg
+!uploads/the-oberoi-amarvilas.webp
+!uploads/the-oberoi-udaivilas.webp
+!uploads/the-taj-mahal-palace-mumbai.avif
+
+# Logs
+logs/
+*.log

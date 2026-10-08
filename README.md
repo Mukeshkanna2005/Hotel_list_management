@@ -23,16 +23,17 @@ Hotel-list/
 │   │   └── hotelController.js    # Hotel CRUD controllers (SQL queries)
 │   ├── routes/
 │   │   └── hotelRoutes.js        # Express API routes & Multer upload middleware
-│   ├── uploads/                  # Uploaded hotel image files
+│   ├── uploads/                  # Hotel image assets & uploads
 │   ├── .env                      # Database & server environment variables
 │   ├── .env.example              # Environment variables template
 │   ├── package.json              # Backend dependencies and scripts
+│   ├── schema.sql                # PostgreSQL database schema and indexes
 │   ├── seed.js                   # Database seeder (12 luxury hotels)
 │   └── server.js                 # Express server entry point (Port 5000)
 │
 ├── frontend/
 │   ├── public/
-│   │   └── hotels/               # Clean hotel image assets
+│   │   └── favicon.svg           # Application favicon
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── HotelCard.jsx     # Hotel card with edit/delete buttons

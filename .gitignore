@@ -4,18 +4,31 @@ node_modules/
 
 # Environment files
 .env
-.env*.local
+.env.*
 *.env
 backend/.env
+!.env.example
+!backend/.env.example
 
 # Build outputs
 dist/
 dist-ssr/
 build/
+*/dist/
 
-# Uploads
+# Uploads - ignore runtime uploads, keep initial seed assets and .gitkeep
 backend/uploads/*
 !backend/uploads/.gitkeep
+!backend/uploads/itc-grand-chola-chennai.jpg
+!backend/uploads/leela-palace-chennai.jpeg
+!backend/uploads/palais-de-mahe-puducherry.webp
+!backend/uploads/taj-falaknuma-palace.webp
+!backend/uploads/taj-fishermans-cove-resort-spa-mahabalipuram.jpg
+!backend/uploads/taj-lake-palace.avif
+!backend/uploads/the-leela-palace-new-delhi.jpg
+!backend/uploads/the-oberoi-amarvilas.webp
+!backend/uploads/the-oberoi-udaivilas.webp
+!backend/uploads/the-taj-mahal-palace-mumbai.avif
 
 # Logs
 logs/
@@ -30,3 +43,14 @@ Thumbs.db
 .vscode/
 !.vscode/extensions.json
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing and caches
+coverage/
+*.lcov
+.eslintcache
+.cache/
